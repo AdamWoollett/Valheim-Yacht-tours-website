@@ -2,19 +2,46 @@
 <html>
 <head>
     <title>Valheim Yachting Tours - Home</title>
-    <link rel="stylesheet" href="StyleSheet.css">
-    <style>hr {color:orange;}</style>
+    <!--Link to the CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <h1 style="font-family:Arial, Helvetica, sans-serif; color:orange; font-size: 60px;;">Discover Valheim's Mysteries</h1>
-    <hr>
-    <!--This is the main descriptive text for the home page-->
-    <p>Set sail with us as we explore uncharted islands, crystal clear waters and breathtaking sunsets. Every tour is a curated experience ensuring you witness the beauty of Valheim's oceans and islands. Join us on a voyage of discovery.</p>
-    <img src="Images/Boat 2.jpeg" height="720" width="1280" alt="An image of 2 vikings in bronze armour sailing towards the camera with bright blue seas and skies">
-    <p><a href="Home.html">Home</a></p>
-        <p><a href="About.html">About</a></p>
-            <p><a href="ImageGallery.html"  id="greenparagraph">Image Gallery</a></p>
-                <p><a href="Tours.html">Tours</a></p>
-                    <p><a href="Contact.html">Contact</a></p>
+    <!-- Nav bar created using only HTML
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Tours.html">Tours</a>
+        <a href="ImageGallery.html">Image Gallery</a>
+        <a href="About.html">About</a></li>
+        <a href="ContactUs.html">Contact Us</a>
+    </nav>-->
+    <!-- Navigation bar created using CSS code and HTML-->
+    <nav>    
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Tours.html">Tours</a></li>
+            <li><a href="ImageGallery.html">Image Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--This is a main section-->
+    <section class="grey">
+        <!--Heading-->
+        <h1>Elegant Valheim Yachting Tours</h1>
+        <hr><!--Horizontal rule-->
+        <!--Commented code contains an example of in-line CSS. The non-commented copy is having internal CSS applied to it-->
+        <!--<p style="font-size:20px; color:blueviolet;">We provide the best yachting tours, sail with us to explore beautiful islands and swim in cold H2O. Living close to water is close to living a pure life.</p>-->
+        <p id="Introparagraph">Set sail with us as we explore uncharted islands, crystal clear waters and breathtaking sunsets. Every tour is a curated experience ensuring you witness the beauty of Valheim's oceans and islands. Join us on a voyage of discovery.</p>
+    </section>
+    <div id="images1">
+        <br>
+        <img src="images/Boat 2.jpeg" alt="Picture of 2 vikings in bronze armour on a boat sailing on a li9ght blue ocean under a light blue sky" width="720">
+    </div>
+    <div id="links">
+        <p><a href="https://www.facebook.com/">Facebook</a></p>
+        <p><a href="mailto:adam.woollett@btinternet.com">E-mail us</a></p>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,45 @@
+        p {font-size:20px; color:rgba(29, 146, 6, 0.923); font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        h1 {font-size: 40px; color: gold;}
+        #orangeparagraph {font-size:10px; color:#4b12e9; font-family: 'Courier New', Courier, monospace;} 
+        #Discoverparagraph{border: 5px outset grey; padding: 20px;}
+        #images1{border: 5px outset grey; padding: 20px;}
+        #links{border: 2px outset lightblue; padding: 10px;}
+        .grey{border: 5px outset grey; padding: 20px;}
+        /* Video 3.2 styling
+        ul{font-size: 20px; list-style-type: none; margin:0; padding:0;}
+        a:link{text-decoration: none;}
+        li{display: inline;}
+        nav{font-size: 25px; color: grey}*/
+/* Navigation style*/
+nav{position: fixed; 
+        top: 0; 
+        left:0; 
+        width: 100%; 
+        padding: 10px 0px; 
+        z-index: 1000; 
+        background-color: rgba(50, 50, 60, 0.95); 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
+}
+nav ul {list-style: none; 
+        padding: 0; 
+        margin: 0; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+}
+nav li{
+margin: 0 15px;
+}
+nav a{
+      font-family: "Montserrat", sans-serif;  
+      font-size: 16px;
+      color:#E6E6E6;
+      text-decoration: none;
+      transition: color 0.3s, border-bottom 0.3s; 
+      padding-bottom: 5px;
+      position: relative;
+}
+nav a:hover{
+       color: #1b1b20; 
+       border-bottom: 2px solid #e6e6e6;
+}
