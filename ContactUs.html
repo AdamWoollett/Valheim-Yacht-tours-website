@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Valheim Yachting Tours - Contact</title>
+    <title>Valheim Karve Tours - Contact Us</title>
     <!--Link to the CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
     <!--Link to Montserrat Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.cpom/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+    <script src="https://kit.fontawesome.com/52f65dff73.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for Valheim Karve Tours website">
+    <meta name="keywords" content="valheim, karve, yachting, tours, water, ocean, sailing holidays">
+    <meta name="author" content="Adam Woollett">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <base href="Home.html" target="_self">
 </head>
+<!--Main body of page-->
 <body>
-    <div id="navigation">
+    <!-- Navigation bar created using CSS code and HTML-->
+    <div class="navigation">
         <nav>
             <ul>    
                 <li><a href="Home.html">Home</a></li>
@@ -19,6 +30,95 @@
             </ul>
         </nav>
     </div>
-    <br><br><br><br><br><p>Contact the company</p>
+    <br><br>
+        <!--Stone pillars-->
+    <div class="StonePillar1"></div>
+    <div class="StonePillar2"></div>
+<!--This is the table section-->
+<section class="two-column-container">
+    <div class="column">
+        <form class="contact-form-box">
+            <h2 class="Enquire-heading">Enquire about a tour:</h2><br>
+                <label for="Full Name"> Full name</label><br>
+                <input type="text" id="firstname" name="firstname" value="John Smith" required minlength="2"><br><br>
+                <label for="Contact e-mail"> E-mail address</label><br>
+                <input type="text" id="contact-email" name="contact-email" value="john.smith@example.com" required minlength="5"><br><br>
+                <label for="phone">Contact Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" value="5555555555" required minlength="5"><br><br>
+                <label for="Desired Tour Type"> What tour are you looking for?</label><br>
+                <textarea type="text" id="Tour request" name="Tour request" rows="6" value="Where to?" required minlength="5"></textarea><br><br>
+                <label for="subject">Would you like to join our mailing list?</label><br>
+                <select id="subject" name="subject">
+                    <option value="">No</option>
+                    <option value="E-mail and text">E-mail and text</option>
+                    <option value="E-mail only">E-mail only</option>
+                    <option value="Text only">Text only</option>
+                </select><br><br>
+                <label for="Ts&Cs?">Do you accept our <a href="Ts&Cs.html">Terms & Conditions</a>?</label>
+                <input type="checkbox" id="ts&cs" name="ts&cs" value="Yes" required><br><br>
+                <label for="Ts&Cs?">Do you accept our <a href="Privacy Policy.html">Privacy Policy</a>?</label>
+                <input type="checkbox" id="privacy" name="privacy" value="Yes" required><br><br>
+                <input id="submit-button" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="column">
+    <div class="contact-us-box">
+      <h2 class="contact-us-h2">Contact Us:</h2>
+        <table class="contact-table">
+            <br>
+            <tr>
+                <td><b>Department</b></td>
+                <td><b>Contact name</b></td>
+                <td><b>Contact Number</b></td>
+            </tr>
+            <tr>
+                <td>Tour Office</td>
+                <td>Sven</td>
+                <td>555555555</td>
+            </tr>
+            <tr>
+                <td>Head Office</td>
+                <td>Bjorn</td>
+                <td>555-555-555</td>
+            </tr>
+            <tr>
+                <td>Docks</td>
+                <td>Leif</td>
+                <td>5555-5555</td>
+            </tr>
+            <tr>
+                <td>Logistics</td>
+                <td>Ulf</td>
+                <td>0118, 999, 881, 999, 119, 725...3</td>
+            </tr>
+        </table>  <br>
+    </div>
+    <br>
+    <div class="map">
+        <h2>Our Head Office:</h2>
+            <iframe 
+                width="98%" 
+                height="500vw" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=London%20SW1A%201AA+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+    </div>
+</section>
+<br><br>
+<footer>
+    <!--Footer section to be reused between pages-->
+    <div>
+        <li class="links">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i> X</a>
+            <a href="mailto:adam.woollett@btinternet.com"><i class="fa-solid fa-envelope"></i> E-mail us</a>
+            <address class="address"><br>Main Base, <br>South Docks, <br>The Harbour, <br>Meadows, <br>01D 1N1, <br>Valheim</address>
+            <p class="copyright">&copy; 2026 Valheim Karve Tours. All rights reserved</p>
+        </li>
+    </div>
+</footer>
 </body>
 </html>

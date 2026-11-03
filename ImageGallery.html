@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Valheim Yachting Tours - Image Gallery</title>
+    <title>Valheim Karve Tours - Image Gallery</title>
     <!--Link to the CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
     <!--Link to Montserrat Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.cpom/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+    <script src="https://kit.fontawesome.com/52f65dff73.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for Valheim Karve Tours website">
+    <meta name="keywords" content="valheim, karve, yachting, tours, water, ocean, sailing holidays">
+    <meta name="author" content="Adam Woollett">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <base href="Home.html" target="_self">
 </head>
+<!--Main body of page-->
 <body>
-    <div id="navigation">
+    <!-- Navigation bar created using CSS code and HTML-->
+    <div class="navigation">
         <nav>
             <ul>    
                 <li><a href="Home.html">Home</a></li>
@@ -19,6 +30,52 @@
             </ul>
         </nav>
     </div>
-    <br><br><br><br><br><p>Gallery of images</p>
+    <!--<div class="gallery">-->
+        <br><br>
+        <main class="gallery-of-images">
+            <figure>
+                <img src="images/Boat 1.png" alt="2 Vikings on a Karve on the open ocean sailing towards the moon" title="Karve trip by moonlight. Image captured by Finpit">
+                <figcaption>We offer night-time tours.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Boat 3.jpeg" alt="A Viking longship with 4 passengers sails past a plains biome. A sealed tower can be seen in the distance" title="Longship by the Plains. Image captured by Finpit">
+                <figcaption>We offer large group tours as well.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Boat 4.jpeg" alt="2 Vikings sailing in a Karve on the open ocean during a rainstorm" title="Small karve on rainy ocean. Image captured by Finpit">
+                <figcaption>Whatever the weather on tour day, we will endure it.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Boat 5.jpg" alt="2 Vikings in a Karve sailing under a starry sky." title="Navigating by the stars. Image captured by Finpit">
+                <figcaption>Night tours bring a calm stillness.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Boat 6.jpg" alt="Viking longship sails with a Karve" title="Longship and Karve side-by-side. Image captured by Finpit">
+                <figcaption>We can run multiple tours simultaneously.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Boat 7.jpg" alt="A Karve with 4 vikings in sails past a black forest." title="Karve with 4 crew members. Image captured by Finpit">
+                <figcaption>Come and join us on our tours.</figcaption>
+            </figure>   
+        </main>
+    <!--</div>-->
+    <!--Call to action-->
+        <section class="call-to-action-gallery">
+            <h2><strong>Will you join us?</strong></h2>
+            <button class="call-to-button" onclick="window.location.href = 'ContactUs.html'">Book now!</button>
+        </section>
+<footer>
+    <!--Footer section to be reused between pages-->
+    <div>
+        <li class="links">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i> X</a>
+            <a href="mailto:adam.woollett@btinternet.com"><i class="fa-solid fa-envelope"></i> E-mail us</a>
+            <address class="address"><br>Main Base, <br>South Docks, <br>The Harbour, <br>Meadows, <br>01D 1N1, <br>Valheim</address>
+            <p class="copyright">&copy; 2026 Valheim Karve Tours. All rights reserved</p>
+        </li>
+    </div>
+</footer>
 </body>
 </html>

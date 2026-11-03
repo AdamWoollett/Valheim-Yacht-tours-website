@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Valheim Yachting Tours - Tours</title>
+    <title>Valheim Karve Tours - Tours</title>
     <!--Link to the CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
     <!--Link to Montserrat Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.cpom/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+    <script src="https://kit.fontawesome.com/52f65dff73.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for Valheim Karve Tours website">
+    <meta name="keywords" content="valheim, karve, yachting, tours, water, ocean, sailing holidays">
+    <meta name="author" content="Adam Woollett">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <base href="Home.html" target="_self">
 </head>
+<!--Main body of page-->
 <body>
-    <div id="navigation">
+    <!-- Navigation bar created using CSS code and HTML-->
+    <div class="navigation">
         <nav>
             <ul>    
                 <li><a href="Home.html">Home</a></li>
@@ -19,6 +30,75 @@
             </ul>
         </nav>
     </div>
-    <br><br><br><br><br><p>Info on the tours</p>
+    <!--This is the tours section-->
+        <!--Stone pillars-->
+    <div class="StonePillar1"></div>
+    <div class="StonePillar2"></div>
+    <main class="tours-main">
+        <section class="tour-descriptors" id="Black-Forest">
+            <div class="tour-content">
+                <h2><strong>Around the Black Forest:</strong></h2>
+                <p>This tour goes around the borders of a Black Forest Biome. 
+                    Marvel at the height of the Fir and Pine trees, along with the deer and birds that weave amongst them. 
+                    Keep an eye out and you may even spot a troll lumbering amongst the trees.</p>
+            </div>
+            <div>
+                <!--<a href="ContactUs.html" id="tour-page-button-link"><button class="tour-page-button">Enquire Now!</button></a>-->
+                <button class="tour-page-button" onclick="window.location.href = 'ContactUs.html'"><strong>Enquire Now!</strong></button>
+            </div>
+            <br>
+        </section>
+        <section class="tour-descriptors" id="Mountain-Ranges">
+            <div class="tour-content">
+                <h2><strong>Around the Mountain Ranges:</strong></h2>
+                <p>Want to marvel at stunning vistas that are almost as big as the world tree? Then come with us on a tour past the sea-side mountain ranges.
+                    These mountains are a wonder of Valheim and are not to be missed. While they may look desolate, they are teeming with wildlife. The howls of wolves 
+                    often accompany our tours, and often tourers can spot roaming wolf packs and Drakes soaring above the mountain tops.
+                </p>
+            </div>
+            <div>
+                <button class="tour-page-button" onclick="window.location.href = 'ContactUs.html'"><strong>Enquire Now!</strong></button>
+            </div>
+            <br>
+        </section>
+        <section class="tour-descriptors" id="Plains">
+            <div class="tour-content">
+                <h2><strong>Around the Plains:</strong></h2>
+                <p>Tour the borders of the wide open plains. Witness the enormous stone obelisks that dot the plains whose origins are still unknown.
+                    Fuling camps can easily be spotted across the plains. Witness these creatures going about their daily lives from the safety of our vessels.
+                    We can also offer Plains tours that go in close vicinity to a Sealed Tower, which is overrun with Fulings.
+                </p>
+            </div>
+            <div>
+                <button class="tour-page-button" onclick="window.location.href = 'ContactUs.html'"><strong>Enquire Now!</strong></button>
+            </div>
+            <br>
+        </section>
+        <section class="tour-descriptors" id="Night">
+            <div class="tour-content">
+                <h2><strong>Night tours:</strong></h2>
+                <p>All of our tours have the option to take place at night. The stillness of the night offers a unique perspective and allows us to witness the lives of the creatures on the shore at night.
+                    Roving packs of Fenrings can be seen on the mountains. Patrolling packs of Fulings lit by torchlight can be seen on the Plains.
+                    The experience of our tours under the light of the Moon, Stars and World Tree is not to be missed.</p>
+            </div>
+            <div>
+                <button class="tour-page-button" onclick="window.location.href = 'ContactUs.html'"><strong>Enquire Now!</strong></button>
+            </div>
+            <br>
+        </section>
+    </main>
+<footer>
+    <!--Footer section to be reused between pages-->
+    <div>
+        <li class="links">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i> X</a>
+            <a href="mailto:adam.woollett@btinternet.com"><i class="fa-solid fa-envelope"></i> E-mail us</a>
+            <address class="address"><br>Main Base, <br>South Docks, <br>The Harbour, <br>Meadows, <br>01D 1N1, <br>Valheim</address>
+            <p class="copyright">&copy; 2026 Valheim Karve Tours. All rights reserved</p>
+        </li>
+    </div>
+</footer>
 </body>
 </html>

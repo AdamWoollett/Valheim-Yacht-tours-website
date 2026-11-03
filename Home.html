@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Valheim Yachting Tours - Home</title>
+    <title>Valheim Karve Tours - Home</title>
     <!--Link to the CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
     <!--Link to Montserrat Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.cpom/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+    <script src="https://kit.fontawesome.com/52f65dff73.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for Valheim Karve Tours website">
+    <meta name="keywords" content="valheim, karve, yachting, tours, water, ocean, sailing holidays">
+    <meta name="author" content="Adam Woollett">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <base href="Home.html" target="_self">
 </head>
+<!--Main body of page-->
 <body>
     <!-- Navigation bar created using CSS code and HTML-->
     <div class="navigation">
@@ -21,69 +30,47 @@
             </ul>
         </nav>
     </div>
-    <!--This is a main section-->
-    <br>
-    <div class="mainheading">
-    <h1>Valheim Yachting Tours</h1>
-    </div>
+    <!--Stone pillars-->
+    <div class="StonePillar1"></div>
+    <div class="StonePillar2"></div>
+    <!--This is the header section-->
+<header class="mainheading">
+    <h1>Valheim Karve Tours</h1>
+    <div class="button-container"><button onclick="window.location.href = 'ContactUs.html'"><strong>Start your tour</strong></button></div>
+</header>
+    <!--This is the main text on the page-->
     <section class="chapter-section">
         <!--Heading-->
         <h2>Discover the world of Valheim's mysteries</h2>
-         <p id="Introparagraph">Set sail with us as we explore 
-            uncharted islands, crystal clear waters
-            and breathtaking sunsets. Every tour is a 
+        <article id="Introparagraph">Set sail with us as we explore 
+            <strong>uncharted islands, crystal clear waters
+            and breathtaking sunsets</strong>. Every tour is a 
             curated experience ensuring you witness 
-            the beauty and tranquility of Valheim's oceans 
-            and islands. Join us on a voyage of discovery that 
-            only Valheim Yachting tours can offer.
-            <br><q>They said I could have some mead if I showed up today</q> says viking A
-            <br><q>I had a great time</q> says viking B
-        </p>
+            the beauty and tranquility of Valheim's many oceans
+            and islands. Join us on a voyage of discovery of far-off lands 
+            and biomes that only Valheim Karve Tours can offer.
+            <br><br><q>I had a great time</q> says viking A
+            <br><br><q>They said I could have some mead if I showed up today</q> says viking B
+        </article>
     </section>
-    <div class="images1">
-        <br>
-        <img src="images/Boat 2.jpeg" alt="Picture of 2 vikings in bronze armour on a boat sailing on a li9ght blue ocean under a light blue sky" width="720">
-        <!--<p class="images1descriptor">Come and join us as we sail the coast around uncharted lands</p>-->
+<footer>
+    <!--Footer section to be reused between pages-->
+    <div>
+        <section class="footerblock">
+        <li class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i> X</a>
+            <a href="mailto:adam.woollett@btinternet.com"><i class="fa-solid fa-envelope"></i> E-mail us</a>
+        </section>
+        <section class="footerblock">
+            <address class="address"><br>Main Base, <br>South Docks, <br>The Harbour, <br>Meadows, <br>01D 1N1, <br>Valheim</address>
+        </section>
+        <section>
+            <p class="copyright">&copy; 2026 Valheim Karve Tours. All rights reserved</p>
+        </section>
+        </li>
     </div>
-    <div class="links">
-        <p><a href="https://www.facebook.com/">Facebook</a></p>
-        <p><a href="mailto:adam.woollett@btinternet.com">E-mail us</a></p>
-        <p><address>1st Floor Front Suite, <br>Unit 10, <br>Conqueror Court, <br>Sittingbourne, <br>ME10 5BH, <br>UK</address></p>
-    </div>
-    <div class="footer">
-    <p>&copy; 2025 My Website</p>
-    </div>
+</footer>
 </body>
- <!-- Nav bar created using only HTML
-    <nav>
-        <a href="Home.html">Home</a>
-        <a href="Tours.html">Tours</a>
-        <a href="ImageGallery.html">Image Gallery</a>
-        <a href="About.html">About</a></li>
-        <a href="ContactUs.html">Contact Us</a>
-    </nav>-->
- <!--<hr>Horizontal rule-->
-        <!--Commented code contains an example of in-line CSS. The non-commented copy is having internal CSS applied to it-->
-        <!--<p style="font-size:20px; color:blueviolet;">We provide the best yachting tours, sail with us to explore beautiful islands and swim in cold H2O. Living close to water is close to living a pure life.</p>-->
-        <!--Below code has a bunch of examples of formatting applied to it.
-        <p id="Introparagraph">Set sail with us as we explore 
-            <span style="font-size: x-large; color:aqua;">
-            uncharted islands</span>, <del>crystal clear waters</del>
-            and <small>breathtaking sunsets</small>. Every tour is a 
-            <mark>curated experience</mark> ensuring you <ins>witness</ins> 
-            the <em>beauty and tranquility</em> of Valheim's oceans 
-            and islands. Join us on a voyage of discovery that 
-            only <strong>Valheim Yachting tours</strong><sup>TM</sup> 
-            can offer. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enjoy sailing on the H<sub>2</sub>O.
-            We also offer tours to the <abbr>NASA</abbr> space center.
-            <br><q>They said I could have some mead if I showed up today</q>
-            <br><cite> The Hobbit</cite> by J.R.R. Tolkien
-            <br><bdo dir="rtl">This text is reversed.</bdo>
-            <br><code>x=2; y=3; z=X+Y;</code>
-            <br><kbd>Alt + S</kbd>
-            <br>Command Line Output:<br><samp>"Hello World"</samp><br><var>"Hello World"</var>
-            <br>When you are creating paragraphs in your <abbr>HTML</abbr> you use the &lt;p&gt;&lt;/p&gt;.
-            <blockquote cite="https://www.facebook.com">I had a great time says one viking.</blockquote>
-            <br>&pound; &quot; &#128514;
-        </p>-->
 </html>
