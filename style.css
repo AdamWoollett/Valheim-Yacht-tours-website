@@ -9,12 +9,8 @@ button{
         border: 2px solid gold;
         border-radius: 5px;
         background-color: rgb(106, 106, 106);
-        padding-top:5px;
-        padding-bottom: 8px;
-        padding-left:20px;
-        padding-right:20px;
+        padding: 5px 20px 8px 20px;
         font-size: 1.5rem;
-        
 }
 button:hover{
         border-radius: 5px;
@@ -49,25 +45,32 @@ nav ul {
         justify-content: center;
 }
 nav a{
-        font-family: "Montserrat", sans-serif;  
+      font-family: "Montserrat", sans-serif; 
       font-size: 16px;
       color:gold;
       text-decoration: none;
       text-align: center;
       transition: color 0.3s, border-bottom 0.3s; 
-      padding-bottom: 5px;
-        background-color: rgba(78, 78, 83, 0.95);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
+      background-color: rgba(78, 78, 83, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
       display: flex;
       justify-content: center;
       padding: 8px 12px;
       border-bottom: 2px solid rgba(255, 217, 0, 0);
       margin: 0 15px;
+      border-radius: 8px;
 }
 nav a:hover{
        color: rgb(255, 170, 0); 
        border-bottom: 2px solid gold;
        background-color: rgba(90, 90, 96, 0.95);
+}
+@media screen and (max-width: 700px){
+        nav a{
+                margin: 0px;
+                box-shadow:0 0 0;
+                border: 1px solid gold;
+        }
 }
 
 /*Vertical stone pillars styling*/
@@ -89,6 +92,14 @@ nav a:hover{
         width: 80px;
         background-image: url(images/Vertical\ wall\ 2.png);
 }
+@media screen and (max-width: 700px){
+        .StonePillar1{
+                width: 40px;
+        }
+        .StonePillar2{
+                width: 40px;
+        }
+}
 
 /*Footer Styling*/
 footer{
@@ -96,7 +107,6 @@ footer{
         justify-content: center;
         border: 2px outset rgb(193, 197, 198);
         background-color: rgba(25, 24, 24, 0.878);
-        
 }
 .links{
         list-style-type: none; 
@@ -104,8 +114,7 @@ footer{
         flex-direction: column;
         justify-content: center; 
         text-align: center;
-        padding-top:20px;
-        
+        padding-top:20px;  
 }
 .links a {
         text-decoration: none; 
@@ -127,20 +136,27 @@ address{
         text-align: center;
         color:#71717a;
 }
+@media screen and (max-width: 500px){
+        .links{
+                display: flex;
+                flex-direction: column;
+        }
+        .links a {
+                padding:4px;
+        }
+}
 
 /*Home page styling*/
 .mainheading{font-size: 2.0rem; 
         color: gold; 
-        /*padding:15.0rem;*/
-        /*margin-left: 40px;*/
         font-family: "Oswald", sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         height: 100vh;
-        /*align-items: center;*/
         background-image: url("images/Boat\ 2.jpeg");
+        background-position: 66% 0%;
         background-size: cover;
         margin-top: 55px;
         z-index: 999;
@@ -152,10 +168,12 @@ address{
         padding-top: 15vh;
 }
 .chapter-section{
+        display: flex;
+        flex-direction: column;
         border-radius: 8px;
         padding: 20px;
         background-color: rgba(255,255,255,0.05);
-        margin: 40px auto;
+        margin: 10px auto;
         max-width: 800px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -167,12 +185,25 @@ address{
         border-bottom: 2px solid #e6e6e6;
         display: inline-block;
         padding-bottom: 5px;
- }
+}
  .chapter-section article {
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
         color: #e6e6e6;
         line-height: 1.6;
+}
+@media screen and (max-width: 1010px){
+        .chapter-section{
+                margin: 10px 80px;
+        }
+}
+@media screen and (max-width: 700px){
+        .mainheading{
+                margin:55px 30px 0px 30px;
+        }
+        .chapter-section{
+                margin: 10px 40px;
+        }
 }
 
 /*About Us page styling*/
@@ -197,11 +228,8 @@ address{
         border-bottom: 2px solid #e6e6e6;
 }
 .About-us-text{
-        margin-right: 80px;
-        margin-left: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin:10px 80px 0px 10px;
+        padding:0px 20px 10px 10px;
         background-color: #615d5d59;
         max-width: 800px;
         box-shadow: 0 2px 10px #202022;
@@ -209,12 +237,8 @@ address{
 }
 .call-to-action{
         text-align:center;
-        margin-top: 20px;
-        margin-right: 80px;
-        margin-left: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: 10px 80px 10px 10px;
+        padding:0px 10px 10px 10px;
         background-color: #615d5d59;
         max-width: 800px;
         box-shadow: 0 2px 10px #202022;
@@ -222,11 +246,37 @@ address{
         border-radius: 8px;
 }
 .call-to-button{
-       text-align:center;
-        margin:10px auto;
-        margin-bottom: 20px;
+        text-align:center;
+        margin:10px auto 20px auto;
         background-color: #615d5d59;
         box-shadow: 0 2px 10px #202022; 
+}
+@media screen and (max-width: 800px){
+        .column img{
+                position: relative;
+                left:-30px;
+        }
+        .column{
+                margin-left: 70px;
+        }
+}
+@media screen and (max-width: 700px){
+        .two-column-container{
+                display: inline;
+        }
+        .column img{
+                position: relative;
+                left:-30px;
+        }
+        .column{
+                margin-left: 10px;
+        }
+        .About-us-text{
+                margin: 10px 40px auto 30px;
+        }
+        .call-to-action{
+                margin: 10px 40px 10px 30px;
+        }
 }
 
 /*Image Gallery page styling*/
@@ -248,13 +298,11 @@ address{
 .gallery-of-images figure img{
         width: 100%;
 }
-
 .gallery-of-images img{
         padding:0px;
         position:relative;
         width:100%;
-        box-sizing: border-box;
-        
+        box-sizing: border-box; 
 }
 .gallery-of-images figcaption{
         background-color: #615d5dde;
@@ -263,9 +311,26 @@ address{
         z-index:1;
         position:absolute;
         bottom:4px;
-
 }
-@media screen and (max-width: 600px){
+.StonePillar1Gallery{
+        z-index: 999;
+        position: fixed;
+        left: 0px;
+        top: 55px;
+        height:100%;
+        width: 30px;
+        background-image: url(images/Vertical\ wall\ 1.png);
+}
+.StonePillar2Gallery{
+        z-index: 998;
+        position: fixed;
+        right: 0px;
+        top:55px;
+        height:100%;
+        width: 30px;
+        background-image: url(images/Vertical\ wall\ 2.png);
+}
+@media screen and (max-width: 900px){
         figcaption{
                 font-size:3vw;
         }
@@ -274,13 +339,10 @@ address{
                 width:90vw;
         }
 }
-
 .call-to-action-gallery{
         text-align:center;
         margin:40px auto;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding:0px 10px 10px 10px;
         background-color: #615d5d59;
         max-width: 800px;
         box-shadow: 0 2px 10px #202022;
@@ -300,7 +362,6 @@ address{
         border-bottom: 2px solid #e6e6e6;
         display: flex;
         padding-bottom: 5px; 
-        margin-left:100px;
         text-align: center;
 }
 form{
@@ -328,8 +389,8 @@ input:valid, textarea:valid, select:valid{
 }
 input:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown){
-    border-color: #dc3545;
-    border-radius: 4px;
+        border-color: #dc3545;
+        border-radius: 4px;
 }
 /*Custom Table styles for Contact Us page*/
 .contact-table{
@@ -344,8 +405,7 @@ textarea:invalid:not(:placeholder-shown){
         max-width: 800px;
         box-shadow: 0 2px 10px #202022;
         border-radius: 8px;
-        margin-left:-5vw;
-        margin-right:10vw;
+        margin:auto 10vw auto -5vw;
 }
 .contact-table td{
         padding: 10px;
@@ -356,15 +416,63 @@ textarea:invalid:not(:placeholder-shown){
         max-width: 800px;
         box-shadow: 0 2px 10px #202022;
         border-radius: 8px;
-        margin-left:-5vw;
-        margin-right: 10vw;
+        margin: 20px 10vw 10px -5vw;
+        padding-right: 6px;
 }
-iframe{
-        margin-left:8px;
-        margin-bottom:4px;
+.map iframe{
+        margin:0px 8px 4px 8px;
 }
 .contact-form-box{
         margin-left:10vw;
+}
+#submit-button{
+        text-align: center; 
+        box-shadow: 0 2px 2px #32323c;
+        color: gold;
+        border: 2px solid gold;
+        border-radius: 5px;
+        background-color: rgb(106, 106, 106);
+        padding: 5px 20px 8px 20px;
+        font-size: 1.1rem;  
+}
+#submit-button:hover{
+        border-radius: 5px;
+        border: 2px solid rgb(255, 170, 0);
+        cursor: pointer;
+}
+@media screen and (max-width: 800px){
+        .two-column-container{
+                display: inline;
+        }
+        .contact-form-box{
+                max-width: none;
+                margin:20px 80px 10px 10px;
+        }
+        .contact-us-box{
+                margin:0px 80px 0px 10px;
+        }
+        .contact-table{
+                margin-left: 3vw;
+        }
+        .map{
+                margin:10px 80px 10px 10px;
+                padding-right: 6px;
+        }
+}
+@media screen and (max-width: 700px){
+        .contact-form-box{
+                margin:20px 40px 10px 30px;
+        }
+        .contact-us-box{
+                margin:0px 40px 0px 30px;
+        }
+        .contact-table{
+                margin-left: 3vw;
+        }
+        .map{
+                margin:10px 40px 10px 30px;
+                padding-right: 10px;
+        }
 }
 
 /*Tour page styling*/
@@ -373,14 +481,13 @@ iframe{
         background-color: #615d5d59;
         box-shadow: 0 2px 10px #202022;
         border-radius: 8px;
-        Margin:1vw 6vw;
+        Margin:1vw 80px;
 }
 .tour-content{
         padding:20px;
 }
 .tour-page-button{
         margin:auto;
-        margin-bottom: 20px;
 }
 .tour-page-button:hover{
         cursor:pointer;
@@ -407,36 +514,49 @@ iframe{
 .tour-content h2{
         border-bottom: 2px solid #e6e6e6;
 }
+@media screen and (max-width: 700px){
+        .tour-descriptors{
+                Margin:1vw 40px;
+        }
+}
 
 /*Ts&Cs page styling*/
 .TsCsBox{
-        margin: 80px 100px;
+        margin: 70px 100px;
         color:#e6e6e6;
         background-color: #615d5d59;
         box-shadow: 0 2px 10px #202022;
         border-radius: 8px;
         padding: 1px 10px;
-
 }
 .TsCsBox ul{
         font-size: x-large;
 }
+@media screen and (max-width: 700px){
+        .TsCsBox{
+                margin: 70px 40px;   
+        }
+}
 
 /*Privacy policy page styling*/
 .PrivacyPolicyBox{
-        margin: 80px 100px;
+        margin: 70px 100px;
         color:#e6e6e6;
         background-color: #615d5d59;
         box-shadow: 0 2px 10px #202022;
         border-radius: 8px;
         padding: 1px 10px;
-
 }
 .PrivacyPolicyBox ul{
         font-size: x-large;
 }
+@media screen and (max-width: 700px){
+        .PrivacyPolicyBox{
+                margin: 70px 40px;   
+        }
+}
 
-/*Styling for links to the repository on Ts&Cs and privacy policy pages*/
+/*Styling for clickable links*/
 .ClickableLink:link{
         color:gold;
 }
