@@ -435,3 +435,11 @@ iframe{
 .PrivacyPolicyBox ul{
         font-size: x-large;
 }
+
+/*Styling for links to the repository on Ts&Cs and privacy policy pages*/
+.RepositoryLink:link{
+        color:gold;
+}
+.RepositoryLink:visited{
+        color:rgb(255, 170, 0);
+}
