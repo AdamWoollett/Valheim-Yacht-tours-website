@@ -57,7 +57,7 @@ nav a{
       justify-content: center;
       padding: 8px 12px;
       border-bottom: 2px solid rgba(255, 217, 0, 0);
-      margin: 0 15px;
+      margin: 4px 15px;
       border-radius: 8px;
 }
 nav a:hover{
@@ -65,17 +65,29 @@ nav a:hover{
        border-bottom: 2px solid gold;
        background-color: rgba(90, 90, 96, 0.95);
 }
-@media screen and (max-width: 700px){
-        nav a{
-                margin: 0px;
-                box-shadow:0 0 0;
-                border: 1px solid gold;
+@media screen and (max-width: 600px){
+        nav{
+                height: 86px;
+        }
+        nav ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin: 0px 60px;
+        }
+        nav li{
+                max-width: 140px;
+        }
+}
+@media screen and (max-width: 500px){
+        nav ul{
+                margin: 0px 10px;
         }
 }
 
 /*Vertical stone pillars styling*/
 .StonePillar1{
-        z-index: 999;
+        z-index: 998;
         position: fixed;
         left: 0px;
         top: 55px;
@@ -84,7 +96,7 @@ nav a:hover{
         background-image: url(images/Vertical\ wall\ 1.png);
 }
 .StonePillar2{
-        z-index: 998;
+        z-index: 997;
         position: fixed;
         right: 0px;
         top:55px;
@@ -100,6 +112,14 @@ nav a:hover{
                 width: 40px;
         }
 }
+@media screen and (max-width: 500px){
+        .StonePillar1{
+                width: 10px;
+        }
+        .StonePillar2{
+                width: 10px;
+        }
+}
 
 /*Footer Styling*/
 footer{
@@ -107,6 +127,7 @@ footer{
         justify-content: center;
         border: 2px outset rgb(193, 197, 198);
         background-color: rgba(25, 24, 24, 0.878);
+        margin-bottom:-10px;
 }
 .links{
         list-style-type: none; 
@@ -205,273 +226,17 @@ address{
                 margin: 10px 40px;
         }
 }
-
-/*About Us page styling*/
-.two-column-container{
-        display: flex;
-        justify-content: space-between; 
-        margin-top: 30px;
-}
-.column{
-        flex-basis: 50%; 
-}
-.column img {
-        width: 100%;
-        height: auto;  
-}
-.column p, .column h2{
-        margin-left: 20px;
-        color:#e6e6e6;
-}
-.column h2{
-        display:inline-block;
-        border-bottom: 2px solid #e6e6e6;
-}
-.About-us-text{
-        margin:10px 80px 0px 10px;
-        padding:0px 20px 10px 10px;
-        background-color: #615d5d59;
-        max-width: 800px;
-        box-shadow: 0 2px 10px #202022;
-        border-radius: 8px;
-}
-.call-to-action{
-        text-align:center;
-        margin: 10px 80px 10px 10px;
-        padding:0px 10px 10px 10px;
-        background-color: #615d5d59;
-        max-width: 800px;
-        box-shadow: 0 2px 10px #202022;
-        color:#e6e6e6;
-        border-radius: 8px;
-}
-.call-to-button{
-        text-align:center;
-        margin:10px auto 20px auto;
-        background-color: #615d5d59;
-        box-shadow: 0 2px 10px #202022; 
-}
-@media screen and (max-width: 800px){
-        .column img{
-                position: relative;
-                left:-30px;
-        }
-        .column{
-                margin-left: 70px;
+@media screen and (max-width: 600px){
+        .mainheading{
+                margin:100px 30px 0px 30px;
         }
 }
-@media screen and (max-width: 700px){
-        .two-column-container{
-                display: inline;
+@media screen and (max-width: 500px){
+        .mainheading{
+                margin:100px 0px 0px 0px;
         }
-        .column img{
-                position: relative;
-                left:-30px;
-        }
-        .column{
-                margin-left: 10px;
-        }
-        .About-us-text{
-                margin: 10px 40px auto 30px;
-        }
-        .call-to-action{
-                margin: 10px 40px 10px 30px;
-        }
-}
-
-/*Image Gallery page styling*/
-.gallery-of-images{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        width: 95vw;
-        margin: 20px auto;
-        padding:10px;
-        background-color: #615d5d59;
-        border-radius: 8px;
-}
-.gallery-of-images figure{
-        margin: 10px;
-        padding: 0px;
-        position: relative;
-        color:#e6e6e6;
-}
-.gallery-of-images figure img{
-        width: 100%;
-}
-.gallery-of-images img{
-        padding:0px;
-        position:relative;
-        width:100%;
-        box-sizing: border-box; 
-}
-.gallery-of-images figcaption{
-        background-color: #615d5dde;
-        width:100%;
-        text-align: center;
-        z-index:1;
-        position:absolute;
-        bottom:4px;
-}
-.StonePillar1Gallery{
-        z-index: 999;
-        position: fixed;
-        left: 0px;
-        top: 55px;
-        height:100%;
-        width: 30px;
-        background-image: url(images/Vertical\ wall\ 1.png);
-}
-.StonePillar2Gallery{
-        z-index: 998;
-        position: fixed;
-        right: 0px;
-        top:55px;
-        height:100%;
-        width: 30px;
-        background-image: url(images/Vertical\ wall\ 2.png);
-}
-@media screen and (max-width: 900px){
-        figcaption{
-                font-size:3vw;
-        }
-        .gallery-of-images{
-                grid-template-columns:1fr;
-                width:90vw;
-        }
-}
-.call-to-action-gallery{
-        text-align:center;
-        margin:40px auto;
-        padding:0px 10px 10px 10px;
-        background-color: #615d5d59;
-        max-width: 800px;
-        box-shadow: 0 2px 10px #202022;
-        color:#e6e6e6;
-}
-.call-to-action-gallery h2{
-        display:inline-block;
-        border-bottom: 2px solid #e6e6e6;    
-}
-
-/*Contact Us page styling*/
-.contact-us-h2{
-        font-family: "Montserrat", sans-serif;
-        font-size: 24px;
-        color: #e6e6e6;
-        margin-bottom: 15px;
-        border-bottom: 2px solid #e6e6e6;
-        display: flex;
-        padding-bottom: 5px; 
-        text-align: center;
-}
-form{
-        color:#e6e6e6;
-        margin-left:6vw;
-        background-color: #615d5d59;
-        box-shadow: 0 2px 10px #202022;
-        padding:20px;
-        max-width:25vw;
-        border-radius: 8px;
-}
-label, input{
-        display:inline-block;
-}
-.Enquire-heading{
-        margin-left:0px;
-        margin-top:0px;
-}
-#submit-button{
-        cursor: pointer;
-}
-input:valid, textarea:valid, select:valid{
-        border-color:#e6e6e6;
-        border-radius: 4px;
-}
-input:invalid:not(:placeholder-shown),
-textarea:invalid:not(:placeholder-shown){
-        border-color: #dc3545;
-        border-radius: 4px;
-}
-/*Custom Table styles for Contact Us page*/
-.contact-table{
-        width: 60%;
-        border-collapse:collapse;
-        text-align: center;
-        color:#e6e6e6;
-        margin-left:1vw;
-}
-.contact-us-box{
-        background-color: #615d5d59;
-        max-width: 800px;
-        box-shadow: 0 2px 10px #202022;
-        border-radius: 8px;
-        margin:auto 10vw auto -5vw;
-}
-.contact-table td{
-        padding: 10px;
-        border: 1px solid #ddd;
-}
-.map{
-        background-color: #615d5d59;
-        max-width: 800px;
-        box-shadow: 0 2px 10px #202022;
-        border-radius: 8px;
-        margin: 20px 10vw 10px -5vw;
-        padding-right: 6px;
-}
-.map iframe{
-        margin:0px 8px 4px 8px;
-}
-.contact-form-box{
-        margin-left:10vw;
-}
-#submit-button{
-        text-align: center; 
-        box-shadow: 0 2px 2px #32323c;
-        color: gold;
-        border: 2px solid gold;
-        border-radius: 5px;
-        background-color: rgb(106, 106, 106);
-        padding: 5px 20px 8px 20px;
-        font-size: 1.1rem;  
-}
-#submit-button:hover{
-        border-radius: 5px;
-        border: 2px solid rgb(255, 170, 0);
-        cursor: pointer;
-}
-@media screen and (max-width: 800px){
-        .two-column-container{
-                display: inline;
-        }
-        .contact-form-box{
-                max-width: none;
-                margin:20px 80px 10px 10px;
-        }
-        .contact-us-box{
-                margin:0px 80px 0px 10px;
-        }
-        .contact-table{
-                margin-left: 3vw;
-        }
-        .map{
-                margin:10px 80px 10px 10px;
-                padding-right: 6px;
-        }
-}
-@media screen and (max-width: 700px){
-        .contact-form-box{
-                margin:20px 40px 10px 30px;
-        }
-        .contact-us-box{
-                margin:0px 40px 0px 30px;
-        }
-        .contact-table{
-                margin-left: 3vw;
-        }
-        .map{
-                margin:10px 40px 10px 30px;
-                padding-right: 10px;
+        .chapter-section{
+                margin: 10px 10px;
         }
 }
 
@@ -519,40 +284,371 @@ textarea:invalid:not(:placeholder-shown){
                 Margin:10px 40px;
         }
 }
-
-/*Ts&Cs page styling*/
-.TsCsBox{
-        margin: 70px 100px;
-        color:#e6e6e6;
-        background-color: #615d5d59;
-        box-shadow: 0 2px 10px #202022;
-        border-radius: 8px;
-        padding: 1px 10px;
+@media screen and (max-width: 600px){
+        .tours-main{
+                Margin-top: 110px;
+        }
 }
-.TsCsBox ul{
-        font-size: x-large;
-}
-@media screen and (max-width: 700px){
-        .TsCsBox{
-                margin: 70px 40px;   
+@media screen and (max-width: 500px){
+        .tour-descriptors{
+                Margin:6px 6px;
         }
 }
 
-/*Privacy policy page styling*/
-.PrivacyPolicyBox{
-        margin: 70px 100px;
+/*Image Gallery page styling*/
+.gallery-of-images{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width: 95vw;
+        margin: 14px auto;
+        padding:10px;
+        background-color: #615d5d59;
+        border-radius: 8px;
+}
+.gallery-of-images figure{
+        margin: 10px;
+        padding: 0px;
+        position: relative;
+        color:#e6e6e6;
+}
+.gallery-of-images figure img{
+        width: 100%;
+}
+.gallery-of-images img{
+        padding:0px;
+        position:relative;
+        width:100%;
+        box-sizing: border-box; 
+}
+.gallery-of-images figcaption{
+        background-color: #615d5dde;
+        width:100%;
+        text-align: center;
+        z-index:1;
+        position:absolute;
+        bottom:4px;
+}
+.StonePillar1Gallery{
+        z-index: 999;
+        position: fixed;
+        left: 0px;
+        top: 55px;
+        height:100%;
+        width: 30px;
+        background-image: url(images/Vertical\ wall\ 1.png);
+}
+.StonePillar2Gallery{
+        z-index: 998;
+        position: fixed;
+        right: 0px;
+        top:55px;
+        height:100%;
+        width: 30px;
+        background-image: url(images/Vertical\ wall\ 2.png);
+}
+@media screen and (max-width: 900px){
+        figcaption{
+                font-size:4vw;
+        }
+        .gallery-of-images{
+                grid-template-columns:1fr;
+                width:90vw;
+        }
+}
+@media screen and (max-width: 600px){
+        .gallery-of-images{
+                margin: 60px auto;
+        }
+}
+@media screen and (max-width: 500px){
+        .StonePillar1Gallery{
+                width: 10px;
+        }
+        .StonePillar2Gallery{
+                width: 10px;
+        }
+        .gallery-of-images{
+                width:96vw;
+                padding: 0px;
+        }
+}
+.call-to-action-gallery{
+        text-align:center;
+        margin:40px auto;
+        padding:0px 10px 10px 10px;
+        background-color: #615d5d59;
+        max-width: 800px;
+        box-shadow: 0 2px 10px #202022;
+        color:#e6e6e6;
+        border-radius: 8px;
+}
+.call-to-action-gallery h2{
+        display:inline-block;
+        border-bottom: 2px solid #e6e6e6;    
+}
+
+/*About Us page styling*/
+.two-column-container-about{
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 20px;
+}
+.aboutColumn{
+        flex-basis: 50%;
+        margin-left: 20px; 
+        color:#e6e6e6;
+}
+.aboutColumn img{
+        position: relative;
+        width: 100%;
+        height: auto;  
+        /*background-image: url(images/4\ of\ us\ trimmed\ 2.png);*/
+        /*clip-path: inset(0px 50px);*/
+        right:-20px;
+}
+.aboutColumn h2{
+        display:inline-block;
+        border-bottom: 2px solid #e6e6e6;
+}
+.About-us-text{
+        margin:0px 80px 0px 10px;
+        padding:0px 20px 10px 10px;
+        background-color: #615d5d59;
+        box-shadow: 0 2px 10px #202022;
+        border-radius: 8px;
+}
+.call-to-action{
+        text-align:center;
+        margin: 10px 80px 10px 10px;
+        padding:0px 10px 10px 10px;
+        background-color: #615d5d59;
+        box-shadow: 0 2px 10px #202022;
+        color:#e6e6e6;
+        border-radius: 8px;
+}
+.call-to-button{
+        text-align:center;
+        margin:10px auto 20px auto;
+        background-color: #615d5d59;
+        box-shadow: 0 2px 10px #202022; 
+}
+@media screen and (max-width: 1200px){
+        .two-column-container-about{
+                display: inline;
+        }
+        .aboutColumn img{
+                position: relative;
+                object-fit: cover;
+                max-height: 270px;
+                right:0px;
+                margin-bottom: 4px;
+        }
+        .aboutColumn{
+                margin-left: 70px;
+        }
+}
+@media screen and (max-width: 800px){
+        .aboutColumn img{
+                max-height: 270px;
+                right:0px;
+        }
+}
+@media screen and (max-width: 700px){
+        .aboutColumn{
+                margin-left: 10px;
+        }
+        .About-us-text{
+                margin: 10px 40px auto 30px;
+        }
+        .call-to-action{
+                margin: 10px 40px 10px 30px;
+        }
+        .aboutColumn img{
+                top:10px;
+        }
+}
+@media screen and (max-width: 500px){
+        .aboutColumn img{
+                left:0px;
+        }
+        .aboutColumn{
+                margin-left: 0px;
+        }
+        .About-us-text{
+                margin: 10px 10px auto 10px;
+        }
+        .call-to-action{
+                margin: 10px 10px 10px 10px;
+        }
+}
+
+/*Contact Us page styling*/
+/*Contact Us page Form styling*/
+.two-column-container-contact{
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 30px;
+}
+.contactColumn{
+        flex-basis: 50%;
+        margin-left: 20px; 
+        color:#e6e6e6;
+}
+.contactColumn h2{
+        display:inline-block;
+        border-bottom: 2px solid #e6e6e6;
+}
+form{
+        color:#e6e6e6;
+        margin-left:6vw;
+        background-color: #615d5d59;
+        box-shadow: 0 2px 10px #202022;
+        padding:20px;
+        max-width:30vw;
+        border-radius: 8px;
+}
+.contact-form-box{
+        margin-left:8vw;
+}
+label, input{
+        display:inline-block;
+}
+.Enquire-heading{
+        margin-left:0px;
+        margin-top:0px;
+}
+input:valid, textarea:valid, select:valid{
+        border-color:#e6e6e6;
+        border-radius: 4px;
+}
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown){
+        border-color: #dc3545;
+        border-radius: 4px;
+}
+#submit-button{
+        text-align: center; 
+        box-shadow: 0 2px 2px #32323c;
+        color: gold;
+        border: 2px solid gold;
+        border-radius: 5px;
+        background-color: rgb(106, 106, 106);
+        padding: 5px 20px 8px 20px;
+        font-size: 1.1rem;  
+}
+#submit-button:hover{
+        border-radius: 5px;
+        border: 2px solid rgb(255, 170, 0);
+        cursor: pointer;
+}
+/*Contact Us page Table styling*/
+.contact-us-box{
+        background-color: #615d5d59;
+        max-width: 800px;
+        box-shadow: 0 2px 10px #202022;
+        border-radius: 8px;
+        margin:0px 10vw 0px -5vw;
+        text-align: center;
+}
+.contact-us-h2{
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        color: #e6e6e6;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #e6e6e6;
+        display: flex;
+        padding-bottom: 5px; 
+}
+.contact-table{
+        display: flex;
+        justify-content: center;
+        border-collapse:collapse;
+        text-align: center;
+        color:#e6e6e6;
+        margin:0px 10px;
+}
+.contact-table td{
+        padding: 1vw;
+        border: 1px solid #ddd;
+}
+/*Contact Us page Map Styling*/
+.map{
+        background-color: #615d5d59;
+        max-width: 800px;
+        box-shadow: 0 2px 10px #202022;
+        border-radius: 8px;
+        margin: 20px 10vw 10px -5vw;
+        padding:0px 6px;
+        text-align: center;
+}
+@media screen and (max-width: 800px){
+        .two-column-container-contact{
+                display: inline;
+        }
+        .contact-form-box{
+                max-width: none;
+                margin:20px 80px 10px 60px;
+        }
+        .contact-us-box{
+                margin:0px 80px 0px 60px;
+        }
+        .map{
+                margin:10px 80px 10px 60px;
+        }
+}
+@media screen and (max-width: 700px){
+        .contact-form-box{
+                margin:20px 40px 10px 20px;
+        }
+        .contact-us-box{
+                margin:0px 40px 0px 20px;
+        }
+        .map{
+                margin:10px 40px 10px 20px;
+        }
+}
+@media screen and (max-width: 600px){
+        .spacer{
+                margin-bottom: 40px;
+        }
+}
+@media screen and (max-width: 500px){
+        .contact-form-box{
+                margin:20px 10px 10px -10px;
+        }
+        .contact-us-box{
+                margin:0px 10px 0px -10px;
+        }
+        .map{
+                margin:10px 10px 10px -10px;
+        }
+}
+
+/*Ts&Cs and Privacy Policy pages styling*/
+.TsCsPrivacyBox{
+        margin: 64px 80px 10px 80px;
         color:#e6e6e6;
         background-color: #615d5d59;
         box-shadow: 0 2px 10px #202022;
         border-radius: 8px;
         padding: 1px 10px;
 }
-.PrivacyPolicyBox ul{
+.TsCsPrivacyBox ul{
         font-size: x-large;
 }
 @media screen and (max-width: 700px){
-        .PrivacyPolicyBox{
-                margin: 70px 40px;   
+        .TsCsPrivacyBox{
+                margin: 64px 40px 10px 40px;   
+        }
+}
+@media screen and (max-width: 600px){
+        .TsCsPrivacyBox{
+                margin: 110px 40px 10px 40px;
+        }
+}
+@media screen and (max-width: 500px){
+        .TsCsPrivacyBox{
+                margin: 110px 10px 10px 10px;   
         }
 }
 
